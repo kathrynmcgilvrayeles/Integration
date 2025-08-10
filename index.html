@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Activity</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #d2f0f0; /* very light cyan */
+            color: #1f2a52; /* dark blue */
+        }
+        details {
+            margin-bottom: 1rem;
+            border-radius: 0.75rem; /* rounded-xl */
+            overflow: hidden; /* Ensures content stays within rounded corners */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            background-color: #f8fafc; /* light background for items */
+        }
+        summary {
+            background-color: #2e4d6b; /* medium blue for summary */
+            color: #ffffff; /* white text */
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            list-style: none; /* Hide default arrow */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 600; /* semibold */
+            border-radius: 0.75rem 0.75rem 0 0; /* rounded-xl top only */
+            position: relative;
+        }
+        summary:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 190, 199, 0.5); /* cyan outline on focus */
+        }
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            line-height: 1;
+            transition: transform 0.3s ease;
+            position: absolute;
+            right: 1.5rem;
+        }
+        details[open] summary::after {
+            content: '-';
+            transform: rotate(0deg);
+        }
+        details[open] summary {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .accordion-content {
+            padding: 1.5rem;
+            background-color: #ffffff; /* white background for content */
+            border-radius: 0 0 0.75rem 0.75rem; /* rounded-xl bottom only */
+            line-height: 1.6;
+        }
+        .accordion-content strong {
+            color: #e72582; /* pink for bolded text */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-3xl">
+        <!-- The main heading has been removed -->
+
+        <!-- Accordion Item 1 -->
+        <details class="group">
+            <summary>
+                Drafting Documents and Emails
+            </summary>
+            <div class="accordion-content">
+                <p>
+                    <strong>How it's used:</strong> Copilot drafts initial versions of emails, reports, and presentations based on your prompts. It can also refine tone or shorten text.
+                </p>
+                <p class="mt-4">
+                    <strong>Benefits for work tasks:</strong> This significantly boosts your efficiency by automating initial drafting, allowing you to dedicate more time to strategic thinking and core professional responsibilities.
+                </p>
+            </div>
+        </details>
+
+        <!-- Accordion Item 2 -->
+        <details class="group">
+            <summary>
+                Summarising Information and Meetings
+            </summary>
+            <div class="accordion-content">
+                <p>
+                    <strong>How it's used:</strong> Copilot provides real-time meeting summaries, highlights key points, and identifies action items from recordings in Teams. It can also summarise long email threads from meeting recordings.
+                </p>
+                <p class="mt-4">
+                    <strong>Benefits for work tasks:</strong> Meeting notes can be produced more quickly, thus improving communication to the team.
+                </p>
+            </div>
+        </details>
+
+        <!-- Accordion Item 3 -->
+        <details class="group">
+            <summary>
+                Brainstorming and Idea Generation
+            </summary>
+            <div class="accordion-content">
+                <p>
+                    <strong>How it's used:</strong> It acts as a thought partner, generating ideas for campaigns, product features, or problem-solving approaches when prompted. Use your existing Microsoft docs and make improvements with Copilot, making suggestions as you make changes.
+                </p>
+                <p class="mt-4">
+                    <strong>Benefits for work tasks:</strong> This fosters innovation, helps you overcome creative blocks, and accelerates the initial stages of your creative projects.
+                </p>
+            </div>
+        </details>
+
+        <!-- Accordion Item 4 -->
+        <details class="group">
+            <summary>
+                Data Analysis and Insights
+            </summary>
+            <div class="accordion-content">
+                <p>
+                    <strong>How it's used:</strong> It assists with data analysis in Excel or Sheets, identifying trends, suggesting formulas, and recommending charts for better understanding. It can suggest or write formulas to improve the analysis and output of data and tables.
+                </p>
+                <p class="mt-4">
+                    <strong>Benefits for work tasks:</strong> This empowers you to gain quicker, data-driven insights, even if you don't have advanced analytical skills or strong skills using formulas.
+                </p>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
